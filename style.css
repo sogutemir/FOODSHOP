@@ -1,0 +1,521 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+.food-container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.food-title-h1 {
+    color: #ffffff;
+    text-align: center;
+}
+
+.food-search form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.food-search input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.food-search input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.food-search input[type="submit"]:hover {
+    background-color: #444;
+}
+
+.food-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.food-table th, .food-table td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #444;
+}
+
+.food-table th {
+    background-color: #2a2a2a;
+}
+
+.table-img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.btn-details, .btn-update, .btn-delete {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-details:hover, btn-update:hover, .btn-delete:hover {
+    background-color: #444;
+}
+
+.navbar {
+    background-color: #222;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #333;
+}
+
+.home-button, .foods-button, .addfoods-button, .myfoods-button, .logout-button, .login-button, .register-button {
+    
+}
+
+.navbar-left-align, .navbar-right-align {
+    display: flex;
+    align-items: center;
+}
+
+
+.register-container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+}
+
+.register-container h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.register-container form {
+    display: grid;
+    grid-gap: 10px;
+}
+
+.register-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.register-container input[type="text"],
+.register-container input[type="password"],
+.register-container input[type="email"],
+.register-container input[type="tel"],
+.register-container input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+.register-container button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.register-container button:hover {
+    background-color: #444;
+}
+
+@media (min-width: 600px) {
+    .register-container form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.login-container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+}
+
+.login-container h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    background-color: #b00020;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-container form {
+    display: grid;
+    grid-gap: 10px;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+.login-container button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.login-container button:hover {
+    background-color: #444;
+}
+
+
+.add-foods {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.add-foods label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.add-foods input[type="text"],
+.add-foods input[type="file"],
+.add-foods textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.add-foods textarea {
+    height: 100px;
+}
+
+.add-foods button,
+.add-foods input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.add-foods button:hover,
+.add-foods input[type="submit"]:hover {
+    background-color: #444;
+}
+
+.add-food-ingredients {
+    margin-bottom: 20px;
+}
+
+
+.food-details {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    margin: 20px auto;
+    width: 80%;
+    word-wrap: break-word;
+}
+
+.food-details h1, .food-details h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.food-details p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.food-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.food-details li {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.food-details img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+.comment-form {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.comment-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    margin-bottom: 10px;
+    height: 100px;
+}
+
+.comment-form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.comment-form input[type="submit"]:hover {
+    background-color: #444;
+}
+
+.comments-section {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.comments-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.comments-section .comment {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.update-food-container {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.update-food-container h1, .update-food-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.update-food-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.update-food-container input[type="text"],
+.update-food-container textarea,
+.update-food-container input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.update-food-container textarea {
+    height: 100px;
+}
+
+.update-food-container input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.update-food-container input[type="submit"]:hover {
+    background-color: #444;
+}
+
+.introduction-container {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+}
+
+.introduction-container h1 {
+    margin-bottom: 20px;
+}
+
+.introduction-container p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.introduction-container .introduction-img {
+    max-width: 200px;
+    height: 200px;
+    margin: 5px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .food-container, .register-container, .login-container, .add-foods, .food-details, .comment-form, .comments-section, .update-food-container, .introduction-container {
+        width: 95%;
+    }
+
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .food-search form {
+        flex-direction: column;
+    }
+
+    .food-table, .food-table th, .food-table td {
+        display: block;
+    }
+
+    .add-foods input[type="text"], .add-foods input[type="file"], .add-foods textarea,
+    .update-food-container input[type="text"], .update-food-container textarea, .update-food-container input[type="file"],
+    .register-container input, .login-container input, .comment-form textarea {
+        width: 100%;
+    }
+
+    .navbar a {
+        display: block;
+        margin-top: 5px;
+    }
+
+    .navbar-left-align, .navbar-right-align {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .food-title-h1, .register-container h2, .login-container h2, .food-details h1, .food-details h2, .comment-form h2, .comments-section h2, .update-food-container h1, .update-food-container h2, .introduction-container h1 {
+        font-size: 1.5em;
+    }
+}
